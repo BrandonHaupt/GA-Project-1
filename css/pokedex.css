@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url("../img/PokemonBackground.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -26,12 +26,20 @@ form {
     position: absolute;
     top: 2.5%;
     left: 20%;
+    z-index: 0;
+    object-fit: contain;
+    /* background-color: purple; */
+    height: 100%;
+    width: 90%;
+    /* background-image: url("../img/Pokedex-img.png");
+    background-repeat: no-repeat; */
 }
 
-#pokedex img {
+.pokedexImg {
+    background-image: url("../img/Pokedex-img.png");
+    background-repeat: no-repeat;
     height: 100%;
-    z-index: 1;
-    object-fit: cover;
+    width: 100%;
 }
 
 #pokeImgContainer {
@@ -83,3 +91,132 @@ form {
     background-color: black;
 }
 
+/* Targeting Small Devices (Phones, Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    #pokedex {
+        z-index: 0;
+    }
+    
+    .pokedexImg {
+        background-image: url("../img/Pokedex-mobile.png");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    #pokeImgContainer {
+        height: 120px;
+        width: 120px;
+        top: 22%;
+        left: 35%;
+    }
+
+    .pokemonInfo {
+        top: 25%;
+        left: 53%;
+        font-size: 1.3rem;
+    }
+
+    form {
+        left: 30%;
+        bottom: 33%;
+    }
+}
+
+/* Targeting Medium devices (Phones, tablets) */
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+    #pokedex {
+        z-index: 0;
+    }
+    
+    .pokedexImg {
+        background-image: url("../img/Pokedex-mobile.png");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    #pokeImgContainer {
+        height: 150px;
+        width: 150px;
+        top: 22%;
+        left: 33%;
+    }
+
+    .pokemonInfo {
+        top: 22%;
+        left: 52%;
+        font-size: 1.3rem;
+    }
+
+    form {
+        left: 30%;
+        bottom: 33%;
+    }
+}
+
+/* Targeting large devices (laptops/Desktop) */
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedexImg {
+        background-image: url("../img/Pokedex-mobile.png");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    #pokeImgContainer {
+        height: 150px;
+        width: 150px;
+        top: 22%;
+        left: 30%;
+    }
+
+    .pokemonInfo {
+        top: 22%;
+        left: 46%;
+        font-size: 1.3rem;
+    }
+
+    form {
+        left: 30%;
+        bottom: 33%;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedexImg {
+        background-image: url("../img/Pokedex-mobile.png");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    #pokeImgContainer {
+        height: 150px;
+        width: 150px;
+        top: 22%;
+        left: 30%;
+    }
+
+    .pokemonInfo {
+        top: 22%;
+        left: 43%;
+        font-size: 1.3rem;
+    }
+
+    form {
+        left: 30%;
+        bottom: 33%;
+    }
+    
+}
