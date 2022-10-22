@@ -7,7 +7,7 @@ function pokeSearch(pokemon) {
     const url = `${defaultURL}${pokemon}`
 
     $.ajax(url).then((poke) => {
-        //example on how to get the pokemon names/ids/etc
+        // example on how to get the pokemon names/ids/etc
         // console.log(poke.sprites.front_default)
         console.log(poke)
         console.log(poke.id)

@@ -10,8 +10,9 @@ body {
     width: 100%;
     background-image: url("../img/PokemonBackground.png");
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+    background-size: 100% 100%;
+    /* height: 100vh;
+    width: 100%; */
     object-fit: cover;
 }
 
@@ -23,7 +24,6 @@ form {
 
 #pokedex {
     position: absolute;
-    object-fit: cover;
     top: 2.5%;
     left: 20%;
 }
