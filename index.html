@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex by Brandon Haupt</title>
 
-    <link rel="stylesheet" href="./css/pokedex.css">
+    <link rel="stylesheet" href="./css/pokedex.css" />
 
     <script src="./js/pokedex.js" defer></script>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <main class="container">
-        <div id="pokedex"></div>
-    </main>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container"></main>
+    <div id="pokedex">
+      <img src="./img/Pokedex-img.png" alt="A custom made pokedex" />
+    </div>
+    <form>
+      <input
+        id="textField"
+        type="text"
+        placeholder="Enter in the pokemon name"
+      />
+      <input id="submit" type="submit" value="Search for Pokemon" />
+    </form>
+  </body>
 </html>

@@ -8,26 +8,60 @@
 body {
     height: 100vh;
     width: 100%;
-}
-
-.container {
     background-image: url("../img/PokemonBackground.png");
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
+}
+
+form {
+    position: absolute;
+    left: 25%;
+    bottom: 38%;
 }
 
 #pokedex {
-    background-image: url("../img/Pokedex-img.png");
-    background-repeat: no-repeat;
-    height: 100%;
+    position: absolute;
     object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 2.5%;
+    left: 20%;
 }
 
-img {
-    height: 500px;
+#pokedex img {
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+#pokemonImg {
+    position: absolute;
+    height: 20%;
+    z-index: 10;
+    top: 17%;
+    left: 24%;
+}
+
+.pokemonInfo {
+    position: absolute;
+    z-index: 10;
+    top: 21%;
+    left: 35%;
+}
+
+#textField, #submit {
+    z-index: 8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 190px;
+    border: 3px solid black;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: white;
+    background-color: black;
 }
