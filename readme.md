@@ -7,7 +7,7 @@ A web application that will display pokemon data using the pokemon API
 - JavaScript
 - jQuery
 - Google Fonts
-- Pokemon API
+- Pokemon API (https://pokeapi.co/)
 
 ## Wireframe
 
