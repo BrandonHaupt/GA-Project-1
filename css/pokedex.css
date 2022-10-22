@@ -34,12 +34,24 @@ form {
     object-fit: cover;
 }
 
-#pokemonImg {
+#pokeImgContainer {
+    /* background-color: purple; */
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+
     position: absolute;
-    height: 20%;
     z-index: 10;
-    top: 17%;
-    left: 24%;
+    top: 21%;
+    left: 26%;
+
+    margin: 0 auto;
+}
+
+#pokemonImg {
+   height: 100%;
+   object-fit: cover;
 }
 
 .pokemonInfo {
@@ -70,3 +82,4 @@ form {
     color: white;
     background-color: black;
 }
+

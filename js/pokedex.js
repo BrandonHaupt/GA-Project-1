@@ -18,7 +18,10 @@ function pokeSearch(pokemon) {
 
         const div = $('<div>')
 
-        div.html(`<img id="pokemonImg" src="${poke.sprites.front_default}"></img>
+        div.html(`
+        <div id="pokeImgContainer">
+            <img id="pokemonImg" src="${poke.sprites.front_default}"></img>
+        </div>
         <div class="pokemonInfo">
             <p class="pokeName">Name: ${poke.name}</p>
             <p class="pokeId">ID: ${poke.id}</p>
