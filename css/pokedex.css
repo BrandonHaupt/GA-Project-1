@@ -81,6 +81,22 @@ form {
     background-color: black;
 }
 
+.arrowUp {
+    /* background-color: purple; */
+    position: absolute;
+    bottom: 27.9%;
+    left: 35%;
+    cursor: pointer;
+}
+
+.arrowDown {
+    /* background-color: purple; */
+    position: absolute;
+    bottom: 16%;
+    left: 35%;
+    cursor: pointer;
+}
+
 /* ----------- width 500px to 700px-------------- */
 @media only screen and (min-width: 500px) and (max-width: 700px){
     #pokedex {
@@ -116,6 +132,21 @@ form {
         left: 20%;
         bottom: 38%;
     }
+
+    form {
+        bottom: 38%;
+        left: 22%;
+    }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 45%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 45%;
+    }
 }
 
 /* ----------- width 700px to 900px-------------- */
@@ -150,8 +181,18 @@ form {
     }
 
     form {
-        left: 28%;
         bottom: 38%;
+        left: 27%;
+    }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 45%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 45%;
     }
 }
 
@@ -187,8 +228,18 @@ form {
     }
 
     form {
-        left: 29%;
         bottom: 38%;
+        left: 30%;
+    }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 45%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 45%;
     }
 }
 
@@ -228,6 +279,16 @@ form {
         left: 34%;
         bottom: 38%;
     }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 47%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 47%;
+    }
     
 }
 
@@ -255,6 +316,16 @@ form {
         left: 17%;
         bottom: 38%;
     }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 28%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 28%;
+    }
     
 }
 
@@ -281,6 +352,16 @@ form {
     form {
         left: 23%;
         bottom: 38%;
+    }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 32.5%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 32.5%;
     }
     
 }
