@@ -39,11 +39,11 @@ function pokeSearch(pokemon) {
 
             $arrowDown.on('click', ()=> {
                 console.log("Clicked Down")
-                poke.id = poke.id - 1
-
                 if(poke.id === 0) {
                     return poke.id = 0
                 }
+
+                return poke.id = poke.id - 1
             })
 
             return pokeIdUp
