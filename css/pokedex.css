@@ -81,84 +81,11 @@ form {
     background-color: black;
 }
 
-/* Targeting Small Devices (Phones, Tablets) */
-@media only screen and (min-width: 600px) and (max-width: 900px){
+/* ----------- width 500px to 700px-------------- */
+@media only screen and (min-width: 500px) and (max-width: 700px){
     #pokedex {
         z-index: 0;
     }
-    
-    .pokedex-small {
-        position: absolute;
-        top: 2.5%;
-        left: 20%;
-    }
-
-    #pokeImgContainer {
-        height: 120px;
-        width: 120px;
-        top: 22%;
-        left: 35%;
-    }
-
-    .pokemonInfo {
-        top: 25%;
-        left: 53%;
-        font-size: 1.3rem;
-    }
-
-    form {
-        left: 30%;
-        bottom: 33%;
-    }
-}
-
-/* Targeting Medium devices (Phones, tablets) */
-@media only screen and (min-width: 900px) and (max-width: 1000px){
-    #pokedex {
-        z-index: 0;
-        height: 99%;
-        width: 80%;
-    }
-    
-    .pokedexImg {
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    #pokeImgContainer {
-        height: 150px;
-        width: 150px;
-        top: 22%;
-        left: 33%;
-    }
-
-    .pokemonInfo {
-        top: 22%;
-        left: 52%;
-        font-size: 1.3rem;
-    }
-
-    form {
-        left: 30%;
-        bottom: 33%;
-    }
-}
-
-/* Targeting large devices (laptops/Desktop) */
-@media only screen and (min-width: 1001px) and (max-width: 1200px){
-    
-    #pokedex {
-        z-index: 0;
-    }
-
-    /* #pokeImgContainer {
-        height: 150px;
-        width: 150px;
-        top: 22%;
-        left: 30%;
-    } */
 
     .pokedex-large {
         opacity: 0;
@@ -166,21 +93,143 @@ form {
 
     .pokedex-small {
         opacity: 1;
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+
+    #pokeImgContainer {
+        top: 20%;
+        left: 40%;
     }
 
     .pokemonInfo {
-        top: 22%;
-        left: 46%;
-        font-size: 1.3rem;
+        top: 37%;
+        left: 40%;
+        font-size: 1.2rem;
     }
 
     form {
-        left: 30%;
-        bottom: 33%;
+        left: 20%;
+        bottom: 38%;
+    }
+}
+
+/* ----------- width 700px to 900px-------------- */
+@media only screen and (min-width: 700px) and (max-width: 900px){
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedex-large {
+        opacity: 0;
+    }
+
+    .pokedex-small {
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+
+    #pokeImgContainer {
+        top: 20%;
+        left: 44%;
+    }
+
+    .pokemonInfo {
+        top: 37%;
+        left: 45%;
+        font-size: 1.2rem;
+    }
+
+    form {
+        left: 28%;
+        bottom: 38%;
+    }
+}
+
+/* ----------- width 900px to 1000px-------------- */
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedex-large {
+        opacity: 0;
+    }
+
+    .pokedex-small {
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+
+    #pokeImgContainer {
+        top: 20%;
+        left: 44%;
+    }
+
+    .pokemonInfo {
+        top: 37%;
+        left: 45%;
+        font-size: 1.2rem;
+    }
+
+    form {
+        left: 29%;
+        bottom: 38%;
+    }
+}
+
+/* ----------- width 1001px to 1200px-------------- */
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
+    
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedex-large {
+        opacity: 0;
+    }
+
+    .pokedex-small {
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+
+    #pokeImgContainer {
+        top: 20%;
+        left: 44%;
+    }
+
+    .pokemonInfo {
+        top: 37%;
+        left: 45%;
+        font-size: 1.2rem;
+    }
+
+    form {
+        left: 34%;
+        bottom: 38%;
     }
     
 }
-
 
 /* ----------- width 1200px to 1400px-------------- */
 @media only screen and (min-width: 1200px) and (max-width: 1400px){
@@ -193,17 +242,17 @@ form {
         height: 150px;
         width: 150px;
         top: 22%;
-        left: 22.5%;
+        left: 20%;
     }
 
     .pokemonInfo {
         top: 22%;
-        left: 34%;
+        left: 32%;
         font-size: 1.3rem;
     }
 
     form {
-        left: 20%;
+        left: 17%;
         bottom: 38%;
     }
     
