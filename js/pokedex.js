@@ -15,7 +15,7 @@ function pokeSearch(pokemon) {
 
         // Converting pokemon weight from Hectograms to lbs, Weird I know...
         const weight = (poke.weight * 0.2204622622)
-        console.log(weight)
+        // console.log(weight)
 
         // Capitalizing the first letter in each pokemons name
         const pName = poke.name
@@ -24,8 +24,32 @@ function pokeSearch(pokemon) {
         // Capitalizing the first letter in each pokemons type
         const t = poke.types[0].type.name
         const pokeType = t[0].toUpperCase() + t.substring(1)
+        // console.log(t)
 
-        console.log(t)
+        // Grabbing the up and down arrows on the pokedex
+        const $arrowUp = $('.arrowUp')
+        const $arrowDown = $('.arrowDown')
+
+        // When up arrow is clicked it changed the pokemons id and displays that pokemon
+        function pokemonIdChange(pokeIdUp) {
+            $arrowUp.on('click', ()=> {
+                console.log("Clicked Up")
+                return poke.id = poke.id + 1
+            })
+
+            $arrowDown.on('click', ()=> {
+                console.log("Clicked Down")
+                poke.id = poke.id - 1
+
+                if(poke.id === 0) {
+                    return poke.id = 0
+                }
+            })
+
+            return pokeIdUp
+        }
+
+    
         
 
         const $main = $('main')
@@ -39,11 +63,10 @@ function pokeSearch(pokemon) {
         </div>
         <div class="pokemonInfo">
             <p class="pokeName">Name: ${pokeName}</p>
-            <p class="pokeId">ID: ${poke.id}</p>
+            <p class="pokeId">ID: ${pokemonIdChange(poke.id)}</p>
             <p class="pokeWeight">Weight: ${weight.toFixed(1)} lbs</p>
             <p class="pokeType">Type: ${pokeType}</p>
         </div>
-            
         `)
 
         $main.append(div)
