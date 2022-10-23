@@ -9,9 +9,24 @@ function pokeSearch(pokemon) {
     $.ajax(url).then((poke) => {
         // example on how to get the pokemon names/ids/etc
         // console.log(poke.sprites.front_default)
-        console.log(poke)
-        console.log(poke.id)
-        console.log(poke.types[0].type.name)
+        // console.log(poke)
+        // console.log(poke.id)
+        // console.log(poke.types[0].type.name)
+
+        // Converting pokemon weight from Hectograms to lbs, Weird I know...
+        const weight = (poke.weight * 0.2204622622)
+        console.log(weight)
+
+        // Capitalizing the first letter in each pokemons name
+        const pName = poke.name
+        const pokeName = pName[0].toUpperCase() + pName.substring(1)
+
+        // Capitalizing the first letter in each pokemons type
+        const t = poke.types[0].type.name
+        const pokeType = t[0].toUpperCase() + t.substring(1)
+
+        console.log(t)
+        
 
         const $main = $('main')
         $main.empty()
@@ -23,10 +38,10 @@ function pokeSearch(pokemon) {
             <img id="pokemonImg" src="${poke.sprites.front_default}"></img>
         </div>
         <div class="pokemonInfo">
-            <p class="pokeName">Name: ${poke.name}</p>
+            <p class="pokeName">Name: ${pokeName}</p>
             <p class="pokeId">ID: ${poke.id}</p>
-            <p class="pokeWeight">Weight: ${poke.weight}</p>
-            <p class="pokeType">Type: ${poke.types[0].type.name}</p>
+            <p class="pokeWeight">Weight: ${weight.toFixed(1)} lbs</p>
+            <p class="pokeType">Type: ${pokeType}</p>
         </div>
             
         `)

@@ -11,9 +11,8 @@ body {
     background-image: url("../img/PokemonBackground.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* height: 100vh;
-    width: 100%; */
     object-fit: cover;
+    overflow: hidden;
 }
 
 form {
@@ -23,43 +22,34 @@ form {
 }
 
 #pokedex {
-    position: absolute;
-    top: 2.5%;
-    left: 20%;
-    z-index: 0;
-    object-fit: contain;
-    /* background-color: purple; */
-    height: 100%;
-    width: 90%;
-    /* background-image: url("../img/Pokedex-img.png");
-    background-repeat: no-repeat; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.pokedexImg {
-    background-image: url("../img/Pokedex-img.png");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+.pokedex-large {
+    height: 100vh;
+    padding: 50px;
+}
+
+.pokedex-small {
+    opacity: 0;
 }
 
 #pokeImgContainer {
     /* background-color: purple; */
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 150px;
     width: 150px;
-
     position: absolute;
     z-index: 10;
     top: 21%;
-    left: 26%;
-
-    margin: 0 auto;
+    left: 25%;
 }
 
 #pokemonImg {
    height: 100%;
-   object-fit: cover;
 }
 
 .pokemonInfo {
@@ -97,11 +87,10 @@ form {
         z-index: 0;
     }
     
-    .pokedexImg {
-        background-image: url("../img/Pokedex-mobile.png");
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
+    .pokedex-small {
+        position: absolute;
+        top: 2.5%;
+        left: 20%;
     }
 
     #pokeImgContainer {
@@ -127,13 +116,15 @@ form {
 @media only screen and (min-width: 900px) and (max-width: 1000px){
     #pokedex {
         z-index: 0;
+        height: 99%;
+        width: 80%;
     }
     
     .pokedexImg {
-        background-image: url("../img/Pokedex-mobile.png");
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
+        object-fit: contain;
     }
 
     #pokeImgContainer {
@@ -157,22 +148,24 @@ form {
 
 /* Targeting large devices (laptops/Desktop) */
 @media only screen and (min-width: 1001px) and (max-width: 1200px){
+    
     #pokedex {
         z-index: 0;
     }
 
-    .pokedexImg {
-        background-image: url("../img/Pokedex-mobile.png");
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-    }
-
-    #pokeImgContainer {
+    /* #pokeImgContainer {
         height: 150px;
         width: 150px;
         top: 22%;
         left: 30%;
+    } */
+
+    .pokedex-large {
+        opacity: 0;
+    }
+
+    .pokedex-small {
+        opacity: 1;
     }
 
     .pokemonInfo {
@@ -188,17 +181,12 @@ form {
     
 }
 
+
+/* ----------- width 1200px to 1500px-------------- */
 @media only screen and (min-width: 1200px) and (max-width: 1500px){
 
-    #pokedex {
-        z-index: 0;
-    }
-
-    .pokedexImg {
-        background-image: url("../img/Pokedex-mobile.png");
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
+    #pokedex{
+        height: 300px;
     }
 
     #pokeImgContainer {
