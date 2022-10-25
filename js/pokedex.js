@@ -39,7 +39,6 @@ function pokeSearch(pokemon) {
                 if(poke.id === 0) {
                     return poke.id = 0
                 }
-
                 return poke.id = poke.id - 1
             })
 

@@ -98,6 +98,62 @@ form {
 }
 
 /* ----------- width 500px to 700px-------------- */
+@media only screen and (min-width: 100px) and (max-width: 500px){
+    #pokedex {
+        z-index: 0;
+    }
+
+    .pokedex-large {
+        opacity: 0;
+    }
+
+    .pokedex-small {
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+
+    #pokeImgContainer {
+        top: 20%;
+        left: 40%;
+    }
+
+    .pokemonInfo {
+        top: 37%;
+        left: 40%;
+        font-size: 1.2rem;
+    }
+
+    form {
+        left: 21%;
+        bottom: 38%;
+    }
+
+    #textField, #submit {
+        width: 140px;
+    }
+
+    .arrowUp {
+        bottom: 27.9%;
+        left: 45%;
+    }
+    
+    .arrowDown {
+        bottom: 16%;
+        left: 45%;
+    }
+
+    .arrowDown, .arrowUp {
+        width: 70px;
+    }
+}
+
+
+/* ----------- width 500px to 700px-------------- */
 @media only screen and (min-width: 500px) and (max-width: 700px){
     #pokedex {
         z-index: 0;
@@ -131,11 +187,6 @@ form {
     form {
         left: 20%;
         bottom: 38%;
-    }
-
-    form {
-        bottom: 38%;
-        left: 22%;
     }
 
     .arrowUp {
