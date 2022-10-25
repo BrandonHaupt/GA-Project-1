@@ -85,9 +85,6 @@ function pokeSearch(pokemon) {
         `)
 
         $main.append(div)
-
-
-
       
     })
 }

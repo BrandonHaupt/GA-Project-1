@@ -320,15 +320,19 @@ form {
     }
 
     #pokeImgContainer {
-        top: 20%;
+        top: 18%;
         left: 44%;
         border: none;
     }
 
+    #textField, #submit {
+        width: 170px;
+    }
+
     .pokemonInfo {
-        top: 37%;
+        top: 36%;
         left: 45%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     form {
@@ -338,12 +342,12 @@ form {
 
     .arrowUp {
         bottom: 27.9%;
-        left: 47%;
+        left: 46%;
     }
     
     .arrowDown {
         bottom: 16%;
-        left: 47%;
+        left: 46%;
     }
     
 }
@@ -356,31 +360,36 @@ form {
     }
 
     #pokeImgContainer {
-        height: 150px;
-        width: 150px;
-        top: 22%;
-        left: 20%;
+        height: 120px;
+        width: 120px;
+        top: 21%;
+        left: 24%;
+        border: none;
+    }
+
+    #textField, #submit {
+        width: 170px;
     }
 
     .pokemonInfo {
         top: 22%;
-        left: 32%;
-        font-size: 1.3rem;
+        left: 34%;
+        font-size: 1.1rem;
     }
 
     form {
-        left: 17%;
+        left: 21%;
         bottom: 38%;
     }
 
     .arrowUp {
         bottom: 27.9%;
-        left: 28%;
+        left: 31%;
     }
     
     .arrowDown {
         bottom: 16%;
-        left: 28%;
+        left: 31%;
     }
     
 }
