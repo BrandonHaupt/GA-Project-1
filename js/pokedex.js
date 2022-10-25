@@ -48,23 +48,27 @@ function pokeSearch(pokemon) {
 
         // Capitalizing the first letter in each pokemons type
         const t = poke.types[0].type.name
-        const t2 = poke.types[1].type.name
-        console.log(t2)
+        // const t2 = poke.types[1].type.name
+        // console.log(typeof t2)
         
         const pType = t.charAt(0).toUpperCase() + t.slice(1)
-        const pType2 = t2.charAt(0).toUpperCase() + t2.slice(1)
+        // const pType2 = t2.charAt(0).toUpperCase() + t2.slice(1)
 
-        function pokeType(type) {
-            console.log(type)
-            if(t2 == "undefined" || t2 == undefined){
-                return " "
-            }
-            return type
-        }
+      
+        // function pokeType(type) {
+        //     console.log(type)
+        //     if(t2 == " " || t2 == "undefined" || t2 == "anonymous"){
+        //         return " "
+        //     } else {
+        //         return type
+        //     }
+        // }
     
         const $main = $('main')
         $main.empty()
         const div = $('<div>')
+
+        // <p class="pokeType">${pokeType(pType2)}</p
 
         div.html(`
         <div id="pokeImgContainer">
@@ -76,12 +80,15 @@ function pokeSearch(pokemon) {
             <p class="pokeWeight">Weight: ${weight.toFixed(1)} lbs</p>
             <div class="pokemonType">
                 <p class="pokeType">${pType}</p>
-                <p class="pokeType">${pokeType(pType2)}</p>
             </div>
         </div>
         `)
 
         $main.append(div)
+
+
+
+      
     })
 }
 
@@ -95,4 +102,4 @@ $('input[type=submit]').on("click", (event) => {
 
 })
 
-pokeSearch("squirtle")
+pokeSearch("charizard")
