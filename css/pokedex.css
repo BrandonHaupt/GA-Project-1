@@ -224,13 +224,13 @@ form {
 
     #pokeImgContainer {
         top: 20%;
-        left: 44%;
+        left: 40%;
         border: none;
     }
 
     .pokemonInfo {
         top: 37%;
-        left: 45%;
+        left: 40%;
         font-size: 1.2rem;
     }
 
