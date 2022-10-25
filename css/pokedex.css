@@ -444,16 +444,16 @@ form {
     }
 
     #pokeImgContainer {
-        height: 150px;
-        width: 150px;
+        height: 130px;
+        width: 130px;
         top: 20%;
-        left: 29%;
+        left: 30%;
         border: none;
     }
 
     .pokemonInfo {
         top: 22%;
-        left: 37%;
+        left: 38%;
         font-size: 1.1rem;
     }
 
