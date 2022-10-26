@@ -158,7 +158,7 @@ form {
         left: 30%;
     }
 
-    .arrowUp {
+    /* .arrowUp {
         bottom: 31%;
         left: 45%;
     }
@@ -170,7 +170,7 @@ form {
 
     .arrowDown, .arrowUp {
         height: 50px;
-    }
+    } */
 }
 
 /* ----------- width 500px to 700px-------------- */
@@ -195,25 +195,31 @@ form {
 
     #pokeImgContainer {
         top: 18%;
-        left: 34%;
+        left: 25%;
         border: none;
     }
 
     #pokemonImg {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .pokemonInfo {
-        top: 40%;
-        left: 32%;
+        top: 74%;
+        left: 25%;
         font-size: 1.1rem;
-        color: black;
     }
 
     form {
-        left: 20%;
-        bottom: 38%;
+        display: flex;
+        flex-direction: column;
+        bottom: 31%;
+        left: 27%;
+    }
+
+    #textField, #submit {
+        width: 300px;
+        margin: 5px 0px;
     }
 
     .arrowUp {
@@ -246,28 +252,33 @@ form {
         top: 0;
         padding: 30px;
     }
-
     #pokeImgContainer {
         top: 18%;
-        left: 39%;
+        left: 31%;
         border: none;
     }
 
     #pokemonImg {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .pokemonInfo {
-        top: 40%;
-        left: 38%;
+        top: 74%;
+        left: 32%;
         font-size: 1.1rem;
-        color: black;
     }
 
     form {
-        bottom: 38%;
-        left: 27%;
+        display: flex;
+        flex-direction: column;
+        bottom: 33%;
+        left: 32%;
+    }
+
+    #textField, #submit {
+        width: 300px;
+        margin: 5px 0px;
     }
 
     .arrowUp {
@@ -303,27 +314,34 @@ form {
 
     #pokeImgContainer {
         top: 18%;
-        left: 41%;
+        left: 34%;
         border: none;
     }
 
     #pokemonImg {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
+
     .pokemonInfo {
-        top: 39%;
-        left: 40%;
+        top: 74%;
+        left: 35%;
         font-size: 1.1rem;
-        color: black;
     }
 
     form {
-        bottom: 38%;
-        left: 30%;
+        display: flex;
+        flex-direction: column;
+        bottom: 33%;
+        left: 35%;
     }
 
-    .arrowUp {
+    #textField, #submit {
+        width: 300px;
+        margin: 5px 0px;
+    }
+
+    /* .arrowUp {
         bottom: 27.9%;
         left: 45%;
     }
@@ -331,7 +349,7 @@ form {
     .arrowDown {
         bottom: 16%;
         left: 45%;
-    }
+    } */
 }
 
 /* ----------- width 1001px to 1200px-------------- */
