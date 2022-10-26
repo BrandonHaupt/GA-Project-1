@@ -79,7 +79,7 @@ function pokeSearch(pokemon) {
             <p class="pokeId">ID: ${pokemonIdChange(poke.id)}</p>
             <p class="pokeWeight">Weight: ${weight.toFixed(1)} lbs</p>
             <div class="pokemonType">
-                <p class="pokeType">${pType}</p>
+                <p class="pokeType">Type: ${pType}</p>
             </div>
         </div>
         `)
