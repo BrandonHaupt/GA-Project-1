@@ -21,8 +21,6 @@ function pokeSearch(pokemon) {
         const pName = poke.name
         const pokeName = pName[0].toUpperCase() + pName.substring(1)
 
-       
-
         // Grabbing the up and down arrows on the pokedex
         const $arrowUp = $('.arrowUp')
         const $arrowDown = $('.arrowDown')
