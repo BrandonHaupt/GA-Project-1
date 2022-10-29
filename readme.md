@@ -1,7 +1,9 @@
 # Pokedex
+
 A web application that will display pokemon data using the pokemon API
 
 ## Technologies Used
+
 - HTML 5
 - Css
 - JavaScript
@@ -14,13 +16,11 @@ A web application that will display pokemon data using the pokemon API
 ![pokedex wireframe](https://i.imgur.com/mEJJTIR.png)
 
 |                      | Min Features | Additional Time | Advanced |
-|----------------------|:------------:|:---------------:|:--------:|
-| Search by Textbox    | x            |                 |          |
-| Navigate with arrows | x            |                 |          |
-| Display Stats        | x            |                 |          |
-| Pokemon in BG        |              | x               |          |
-| Paralax              |              |                 | x        |
-
-
+| -------------------- | :----------: | :-------------: | :------: |
+| Search by Textbox    |      x       |                 |          |
+| Navigate with arrows |      x       |                 |          |
+| Display Info         |      x       |                 |          |
+| Evolution chain      |              |        x        |          |
+| Paralax              |              |                 |    x     |
 
 #### By Brandon Haupt
