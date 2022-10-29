@@ -18,7 +18,6 @@ A web application that will display pokemon data using the pokemon API
 |                      | Min Features | Additional Time | Advanced |
 | -------------------- | :----------: | :-------------: | :------: |
 | Search by Textbox    |      x       |                 |          |
-| Navigate with arrows |      x       |                 |          |
 | Display Info         |      x       |                 |          |
 | Evolution chain      |              |        x        |          |
 | Paralax              |              |                 |    x     |
