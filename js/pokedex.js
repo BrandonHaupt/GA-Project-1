@@ -49,6 +49,7 @@ function pokeSearch(pokemon) {
         // const t2 = poke.types[1].type.name
         // console.log(typeof t2)
         
+        //Changes the pokemons first letter and puts it to uppercase and then pushes the rest back together
         const pType = t.charAt(0).toUpperCase() + t.slice(1)
         // const pType2 = t2.charAt(0).toUpperCase() + t2.slice(1)
 
@@ -62,12 +63,16 @@ function pokeSearch(pokemon) {
         //     }
         // }
     
+        // grabs the main
         const $main = $('main')
+        // empies the main to append more pokemon
         $main.empty()
+        //grabs the div
         const div = $('<div>')
 
         // <p class="pokeType">${pokeType(pType2)}</p
 
+        // Pushes the api stats to the div in the HTML
         div.html(`
         <div id="pokeImgContainer">
             <img id="pokemonImg" src="${poke.sprites.front_default}"></img>
